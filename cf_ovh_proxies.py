@@ -7,32 +7,36 @@ import random
 import threading
 import sys
 import ssl
+import os
 import datetime
+import colorama
+from colorama import Style, Back, Fore
+colorama.init()
 
 
-
-print ('''
-██╗░░░░░░█████╗░██╗░░░██╗███╗░░██╗  /////////////
+os.system('cls')
+print (f'''
+{Fore.PURPLE}██╗░░░░░░█████╗░██╗░░░██╗███╗░░██╗  /////////////
 ██║░░░░░██╔══██╗╚██╗░██╔╝████╗░██║ | Elliot A. |/
 ██║░░░░░███████║░╚████╔╝░██╔██╗██║ |-----------|/ 
 ██║░░░░░██╔══██║░░╚██╔╝░░██║╚████║ |  Layer 7  |/ 
 ███████╗██║░░██║░░░██║░░░██║░╚███║ | DDoS tool |/ 
-╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚══╝ |___________|/
->--------------------------------------------->
+╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚══╝ |___________|/{Fore.RESET}
+{Fore.RED}>--------------------------------------------->
 Version 1.1
 							Remake par Layn. ΣB3#1337
-┌─────────────────────────────────────────────┐
-│      Tos: N'attaque pas les site .gov       │
-├─────────────────────────────────────────────┤
+┌─────────────────────────────────────────────┐{Fore.RESET}
+{Fore.RED}│{Fore.RESET}      {Fore.PURPLE}Tos: N'attaque pas les site .gov{Fore.RESET}       {Fore.RED}│{Fore.RESET}
+{Fore.RED}├─────────────────────────────────────────────┤
 │              [+] Updates :                  │
 │          [*] Optimisation                   │
 │          [*] Changement des sorties         │
 │          [*] Auto analyseur d'url           │
 │          [*] Auto analyseur d'IP            │
 │          [*] Bypass CF & OVH                │
-├─────────────────────────────────────────────┤
-│ Link: https://discord.gg/mrrobot & .gg/eb3  │
-└─────────────────────────────────────────────┘''')
+├─────────────────────────────────────────────┤{Fore.RESET}
+{Fore.RED}│{Fore.RESET} {Fore.PURPLE}Link: https://discord.gg/mrrobot & .gg/eb3{Fore.RED}  {Fore.RED}│{Fore.RESET}
+{Fore.RED}└─────────────────────────────────────────────┘{Fore.RESET}''')
 
 acceptall = [
 		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n",
